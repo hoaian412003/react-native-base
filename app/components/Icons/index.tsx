@@ -6,7 +6,8 @@ type Props = Omit<IconProps<'any'>, 'name'>
 
 const Icons = {
   eye: (props: Props) => <AntDesign {...props} name="eyeo" />,
-  eyeOff: (props: Props) => <Feather {...props} name="eye-off" />
+  eyeOff: (props: Props) => <Feather {...props} name="eye-off" />,
+  down: (props: Props) => <AntDesign {...props} name="down" />,
 }
 
 export default Icons;
