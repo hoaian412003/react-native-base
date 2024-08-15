@@ -19,6 +19,19 @@ const normalizedStories = [
       /^\.(?:(?:^|\/|(?:(?:(?!(?:^|\/)\.).)*?)\/)(?!\.)(?=.)[^/]*?\.stories\.(?:ts|tsx|js|jsx)?)$/
     ),
   },
+  {
+    titlePrefix: 'Screens',
+    directory: '../app/screens',
+    files: '**/*.stories.?(ts|tsx|js|jsx)',
+    importPathMatcher:
+      /^\.(?:(?:^|\/|(?:(?:(?!(?:^|\/)\.).)*?)\/)(?!\.)(?=.)[^/]*?\.stories\.(?:ts|tsx|js|jsx)?)$/,
+    // @ts-ignore
+    req: require.context(
+      '../app/screens',
+      true,
+      /^\.(?:(?:^|\/|(?:(?:(?!(?:^|\/)\.).)*?)\/)(?!\.)(?=.)[^/]*?\.stories\.(?:ts|tsx|js|jsx)?)$/
+    ),
+  },
 ];
 
 // @ts-ignore
