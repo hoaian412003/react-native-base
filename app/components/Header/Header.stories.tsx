@@ -11,5 +11,5 @@ export const Primary: Story = {
   render: () => <Header />
 }
 export const Secondary: Story = {
-  render: () => <SecondaryHeader />
+  render: () => <SecondaryHeader title='Register' />
 }

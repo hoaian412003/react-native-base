@@ -23,7 +23,7 @@ export const LoginScreen = () => {
       </TouchableOpacity>
     </Flex>
     <Button size="lg" mt={10}>{t("Login")}</Button>
-    <View mt="auto">
+    <View mt="auto" mb="10">
       <Text color="text.primary">{t("Don't have account ? ")}
         <TouchableOpacity>
           <Text color="text.link" fontWeight={600}>{t("Register now")}</Text>
