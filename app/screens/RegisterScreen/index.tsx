@@ -7,7 +7,7 @@ export const RegisterScreen = () => {
   const { t } = useTranslation()
   return <View flex={1}>
     <SecondaryHeader />
-    <View padding={4}>
+    <View p={4} pt={0}>
       <Heading size="lg">{t("Register")}</Heading>
     </View>
     <Column padding={4} style={{ gap: 5 }}>

@@ -8,7 +8,8 @@ const Icons = {
   eye: (props: Props) => <AntDesign {...props} name="eyeo" />,
   eyeOff: (props: Props) => <Feather {...props} name="eye-off" />,
   down: (props: Props) => <AntDesign {...props} name="down" />,
-  arrowLeft: (props: Props) => <AntDesign {...props} name="arrowleft" />
+  arrowLeft: (props: Props) => <AntDesign {...props} name="arrowleft" />,
+  check: (props: Props) => <AntDesign {...props} name="check" />
 }
 
 export default Icons;

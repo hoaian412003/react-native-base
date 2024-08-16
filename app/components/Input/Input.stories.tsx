@@ -5,6 +5,7 @@ import { OtpInput } from './OtpInput';
 import { LabelInput } from './LabelInput';
 import Icons from '../Icons';
 import { DatePicker } from './DatePicker';
+import { ConditionContainer } from './ConditionContainer';
 
 const meta: Meta<typeof Input> = {
   title: "Input"
@@ -38,5 +39,22 @@ export const Label: Story = {
         InputRightElement={<Icons.down />}
       />
     </DatePicker>
+  </Center>
+}
+
+export const ConditionInput: Story = {
+  render: () => <Center flex={1}>
+    <ConditionContainer conditions={[
+      {
+        name: "Tối thiểu 8 kí tự",
+        isValid: false
+      },
+      {
+        name: "Bao gồm chữ in hoa, số, kí tự đặc biệt (#,@,...)",
+        isValid: true
+      }
+    ]}>
+      <PasswordInput placeholder='Mật khẩu' />
+    </ConditionContainer>
   </Center>
 }

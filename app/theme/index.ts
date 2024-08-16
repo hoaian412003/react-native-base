@@ -10,6 +10,7 @@ export const theme: Theme = extendTheme({
       primary: '#303030',
       placeholder: '#808080',
       link: '#FF5148',
+      success: '#4BBB47'
     },
     background: {
       primary: '#FFFFFF'
@@ -21,5 +22,5 @@ export const theme: Theme = extendTheme({
   components: {
     Button,
     Input
-  }
+  },
 })

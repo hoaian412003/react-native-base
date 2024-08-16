@@ -12,8 +12,8 @@ export const PasswordInput: React.FC<Props> = (props) => {
       <IconButton onPress={() => setShow(!show)}>
         {
           show ?
-            <Icons.eyeOff size={20} /> :
-            <Icons.eye size={20} />
+            <Icons.eyeOff size={20} color="text.placeholder" /> :
+            <Icons.eye size={20} color="text.placeholder" />
         }
       </IconButton>
     }
