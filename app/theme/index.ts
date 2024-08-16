@@ -8,7 +8,8 @@ export const theme: Theme = extendTheme({
     text: {
       label: '#FFFFFF',
       primary: '#303030',
-      placeholder: '#808080'
+      placeholder: '#808080',
+      link: '#FF5148',
     },
     background: {
       primary: '#FFFFFF'

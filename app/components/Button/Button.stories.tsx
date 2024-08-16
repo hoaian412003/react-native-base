@@ -3,7 +3,7 @@ import { Button, Center, Heading } from 'native-base'
 import React from 'react';
 
 const meta: Meta<typeof Button> = {
-  component: Button
+  component: Button,
 };
 
 export default meta;

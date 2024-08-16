@@ -32,6 +32,5 @@ export const Button: DeepPartial<Theme['components']['Button']> = {
         }
       }
     } as IButtonProps)
-
   }
 }
