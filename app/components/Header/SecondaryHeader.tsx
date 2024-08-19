@@ -3,17 +3,20 @@ import Icons from "../Icons"
 import { TouchableOpacity } from "react-native"
 
 type Props = {
+  back?: React.ReactElement,
   center?: React.ReactElement,
   title?: string;
   right?: React.ReactElement,
 } & IBoxProps;
 
-export const SecondaryHeader: React.FC<Props> = ({ title, center, right, ...props }) => {
+export const SecondaryHeader: React.FC<Props> = ({ title, back, center, right, ...props }) => {
   return <Row padding={4} alignItems="center" justifyContent="space-between" {...props}>
     <View flex={1}>
-      <TouchableOpacity>
-        <Icons.arrowLeft size={25} />
-      </TouchableOpacity>
+      {back ||
+        <TouchableOpacity>
+          <Icons.arrowLeft size={25} />
+        </TouchableOpacity>
+      }
     </View>
     <View flex={3} alignItems="center">
       {title ? <Heading size="md">

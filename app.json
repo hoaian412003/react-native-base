@@ -37,6 +37,14 @@
             "assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf"
           ]
         }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Fitnet access camera to get avatar photo",
+          "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone",
+          "recordAudioAndroid": true
+        }
       ]
     ],
     "experiments": {

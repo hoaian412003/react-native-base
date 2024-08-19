@@ -16,12 +16,17 @@ i18n.use(initReactI18next).init({
 
 
 import Storybook from '../.storybook';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import { BottomSheetModalProvider } from '@gorhom/bottom-sheet';
 
 export default () => {
   const [loaded, error] = Font.useFonts({
     'Montserrat': require('../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf')
   })
 
-  console.log("Loaded is: ", loaded);
-  return <Storybook />
+  return <GestureHandlerRootView>
+    <BottomSheetModalProvider >
+      <Storybook />
+    </BottomSheetModalProvider>
+  </GestureHandlerRootView>
 }

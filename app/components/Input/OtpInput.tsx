@@ -1,9 +1,9 @@
-import { values } from 'lodash';
-import { IInputProps, Input, Row, useTheme } from 'native-base';
+import { IBoxProps, IInputProps, Input, Row, useTheme } from 'native-base';
 import { useEffect, useRef, useState } from 'react';
 
 type Props = {
   pinCount: number;
+  containerProps?: IBoxProps
 } & IInputProps;
 
 export const OtpInput: React.FC<Props> = ({ pinCount, ...props }) => {
@@ -23,7 +23,7 @@ export const OtpInput: React.FC<Props> = ({ pinCount, ...props }) => {
     if (props.onChangeText) props.onChangeText(value.join(""));
   }, [value])
 
-  return <Row style={{ gap: 10 }}>
+  return <Row space={10} justifyContent="space-around" {...props.containerProps}>
     {Array.from({ length: pinCount }).map((_, index) => (
       <Input
         onChangeText={(value) => onEnterPin(value, index)}
@@ -32,8 +32,10 @@ export const OtpInput: React.FC<Props> = ({ pinCount, ...props }) => {
         size="lg"
         value={value[index]}
         key={index}
-        width={16}
-        height={16}
+        style={{
+          flex: 1,
+        }}
+        width={`${100 / pinCount}%`}
         textAlign="center"
         fontSize="xl"
         keyboardType='number-pad'

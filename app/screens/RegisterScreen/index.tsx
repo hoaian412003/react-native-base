@@ -1,4 +1,4 @@
-import { PasswordInput } from "@/app/components"
+import { ConditionContainer, PasswordInput } from "@/app/components"
 import { SecondaryHeader } from "@/app/components/Header"
 import { Button, Column, Heading, Input, Text, View } from "native-base"
 import { useTranslation } from "react-i18next"
@@ -14,7 +14,15 @@ export const RegisterScreen = () => {
       <Input placeholder={t("Username")} />
       <Input placeholder={t("Email")} />
       <Input placeholder={t("Phone number")} />
-      <PasswordInput placeholder={t("Password")} />
+      <ConditionContainer conditions={[{
+        name: t("Min 8 characters"),
+        isValid: false
+      }, {
+        name: t("Include A,a,number,special(#,@,...)"),
+        isValid: false
+      }]}>
+        <PasswordInput placeholder={t("Password")} />
+      </ConditionContainer>
       <PasswordInput placeholder={t("Re enter password")} />
 
       <Button mt={8} size="lg">{t("Register")}</Button>

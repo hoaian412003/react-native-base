@@ -42,7 +42,7 @@ export const Label: Story = {
   </Center>
 }
 
-export const ConditionInput: Story = {
+export const _ConditionInput: Story = {
   render: () => <Center flex={1}>
     <ConditionContainer conditions={[
       {

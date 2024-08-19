@@ -11,7 +11,7 @@ export const Input: DeepPartial<Theme['components']['Input']> = {
     _focus: {
       borderColor: 'brand',
       backgroundColor: 'background.primary'
-    }
+    },
   } as IInputProps,
   defaultProps: {
     size: 'lg',
