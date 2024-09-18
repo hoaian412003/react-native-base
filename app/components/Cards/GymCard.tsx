@@ -1,5 +1,5 @@
 import { Images } from "@/app/assets"
-import { Box, Column, Flex, Heading, Image, Row, Text, View } from "native-base"
+import { Column, Heading, Image, Row, Text } from "native-base"
 import Icons from "../Icons"
 
 export const GymCard = () => {
