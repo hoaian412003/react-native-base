@@ -11,4 +11,8 @@ export type IGym = {
   content: string;
   policy: string;
   previewImages: Array<IMedia>;
+  distance: number;
+  displayPrice: number;
+  medianRating: number;
+  ratingCount: number;
 }

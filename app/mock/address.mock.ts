@@ -4,7 +4,7 @@ export class AddressMock {
   static one(): IAddress {
     return {
       placeId: "1123123123",
-      name: "Chùa gò kén",
+      name: "Quận 10, TP. Hồ Chí Minh",
       lng: 100,
       lat: 100,
       formattedAddress: "Chùa gò kén Tây Ninh"

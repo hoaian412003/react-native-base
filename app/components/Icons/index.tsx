@@ -13,6 +13,7 @@ const Icons = {
   search: (props: Props) => <AntDesign {...props} name="search1" />,
   options: (props: Props) => <Ionicons {...props} name="options" />,
   location: (props: Props) => <Octicons {...props} name="location" />,
+  star: (props: Props) => <AntDesign {...props} name="star" />,
 }
 
 export default Icons;

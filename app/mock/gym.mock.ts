@@ -10,10 +10,14 @@ export class GymMock {
       name: 'Elite Fitness',
       previewImages: MediaMock.many(3),
       address: AddressMock.one(),
-      subjects: SubjectMock.many(5),
+      subjects: SubjectMock.many(20),
       tags: TagMock.many(1),
       content: 'Hello world',
       policy: 'Hello world',
+      distance: 1500,
+      displayPrice: 1200000,
+      medianRating: 3.5,
+      ratingCount: 222
     }
   }
   static many(length: number): IGym[] {

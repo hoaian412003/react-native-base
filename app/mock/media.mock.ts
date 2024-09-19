@@ -6,7 +6,7 @@ export class MediaMock {
       uuid: '123123',
       name: 'Mock Image',
       size: 1234,
-      url: 'https://elitefitness.com.vn/club/detail/elite-fitness-xuan-dieu-315'
+      url: 'https://cms.elitefitness.com.vn/Upload2/20230821/aff6ba33-7fac-46fa-997b-55c77eaf71ff.jpg?w=865&h=487&mode=max'
     }
   }
 
