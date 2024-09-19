@@ -1,7 +1,7 @@
 import { Images } from "@/app/assets";
 import Icons from "@/app/components/Icons";
 import { TouchableOpacity } from "@gorhom/bottom-sheet";
-import { Column, Flex, Heading, Image, Input, Row, View } from "native-base"
+import { Column, Heading, Image, Input, Row, View } from "native-base"
 import { useTranslation } from "react-i18next"
 
 export const StoreTab = () => {
